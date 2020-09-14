@@ -1,0 +1,31 @@
+
+
+<div class="container jumbotron">
+    <h1 style="text-align: center;" class="alert alert-success"> Save Product Data</h1>
+    <div class="table table-border alert alert-warning text-black">
+    <form [formGroup]="form" (ngSubmit)="register()">
+        <div>
+            <label>&nbsp;&nbsp;Full Name :&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Enter your name" formControlName= "user_name" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Email Id :&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Enter your Email Id" formControlName= "user_email" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Age :&nbsp;&nbsp;</label>
+            <input type="number" placeholder="Enter your age" formControlName= "user_age" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Password :&nbsp;&nbsp;</label>
+            <input type="password" placeholder="Enter your password" formControlName= "user_password" />
+        </div>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-primary" > Register</button>
+            <button type="reset" class="btn btn-danger"> Clear</button>
+        </div>
+    </form>
+</div>
+</div>
+

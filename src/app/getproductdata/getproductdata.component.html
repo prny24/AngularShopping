@@ -1,0 +1,52 @@
+
+
+<button class="btn btn-danger" (click)="logout()">Logout</button>
+    <p>getproductdata works!</p>
+<table align="center" class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th style="text-align: center; background-color:darkblue; color:white" colspan="13">Product Details</th>
+        </tr>
+        <tr style="background-color:lightgreen">
+            <th>Model Name</th>
+            <th>Microphone Availability</th>
+            <th>Frequency Range</th>
+            <th>Driver Unit Size</th>
+            <th>Impedance Rating</th>
+            <th>Price</th>
+            <th>Warranty Period</th>
+            <th>Noice Cancelation</th>
+            <th>Volume Control</th>
+            <th>Color Availability</th>
+            <th>Image</th>
+            <!--<th>Product Description</th>-->
+            <th>Edit Product Data</th>
+            <th>Delete Product Data</th>
+            </tr>
+    </thead>
+    <tbody class="text-black" >
+        <tr  *ngFor = "let m of model">
+            <td>{{m.model_name}}</td>
+            <td><input type="checkbox"  [checked]="m.model_micavailability" disabled /></td>
+            <td>{{m.model_freqrange}}Hz</td>
+            <td>{{m.model_dusize}}mm</td>
+            <td>{{m.model_imprating}} ohms</td>
+            <td>{{m.model_price|currency:'INR'}}</td>
+            <td>{{m.model_warranty}} year</td>
+            <td><input type="checkbox"  [checked]="m.model_noicecancel" disabled /></td>
+            <td><input type="checkbox"  [checked]="m.model_volcontrol" disabled /></td>
+            <td>{{m.model_color}}</td>
+            <td><img [src]="m.model_image"></td>
+          <!-- <td >{{m.model_description}}</td>-->
+            <td>
+                <a class="btn btn-info" [routerLink]="['/update',m.id]">Edit Data</a> 
+            </td> 
+            <td>
+                <a class="btn btn-danger" (click)="delete(m.id)">Delete Data</a>
+            </td>
+             </tr>
+    </tbody>
+</table>
+
+
+

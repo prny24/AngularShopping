@@ -1,0 +1,73 @@
+
+
+
+<div class="container jumbotron">
+    
+    <h1 style="text-align: center;" class="alert alert-success"> Update Product Data</h1>
+    <div  class="table table-border alert alert-warning text-black">
+    <form  [formGroup]="form" (ngSubmit)="update()">
+        <div>
+            <label>&nbsp;&nbsp;Model Name :&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Enter model name" formControlName= "model_name" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Microphone Availability :&nbsp;&nbsp;</label>
+            <input type="checkbox" formControlName= "model_micavailability" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp; Frequency Range :&nbsp;&nbsp; </label>
+            <select  formControlName= "model_freqrange" >
+                <option *ngFor = " let f of freq" [value]="f"> 
+                    {{ f }}
+                </option>
+            </select>
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Driver Unit Size :&nbsp;&nbsp;</label>
+            <input type="number" placeholder="Enter Driver Unit Size" formControlName= "model_dusize" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Impedance Rating :&nbsp;&nbsp;</label>
+            <input type="number" placeholder="Enter Impedance Rating"  formControlName= "model_imprating" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Price :&nbsp;&nbsp;</label>
+            <input type="number"  placeholder="Enter Price" formControlName= "model_price" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Warranty Period :&nbsp;&nbsp;</label>
+            <input type="number"  placeholder="Enter Warranty Period" formControlName= "model_warranty" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp; Noice Cancelation :&nbsp;&nbsp;</label>
+            <input type="checkbox"  formControlName= "model_noicecancel" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp; Volume Control :&nbsp;&nbsp;</label>
+            <input type="checkbox"  formControlName= "model_volcontrol" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp; Color Availability:&nbsp;&nbsp; </label>
+            <select  formControlName= "model_color" >
+                <option *ngFor = " let c of color" [value]="c"> 
+                    {{ c }}
+                </option>
+            </select>
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Image of product :&nbsp;&nbsp;</label>
+            <input type="text"  placeholder="Paste path of image here" formControlName= "model_image" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Product Description :&nbsp;&nbsp;</label>
+            <input type="text"  placeholder="Add description of the product here" formControlName= "model_description" />
+        </div>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-primary"> Save</button>
+            <button type="reset" class="btn btn-danger"> Clear</button>
+        </div>
+    </form>
+</div>
+</div>
+

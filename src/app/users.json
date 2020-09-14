@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "user_name": "Akshay Chauhan",
+      "user_email": "akshay123@gmail.com",
+      "user_age": 24,
+      "user_password": "258456",
+      "id": 1
+    },
+    {
+      "user_name": "Vikrant Aglawe",
+      "user_email": "vikrant234@gmail.com",
+      "user_age": 25,
+      "user_password": "456159",
+      "id": 2
+    }
+  ]
+}

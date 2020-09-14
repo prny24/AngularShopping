@@ -1,0 +1,19 @@
+
+<form [formGroup]="loginForm"  (ngSubmit)="login()">
+    
+    <div class="container">
+      <br><br><br><br>
+        <h3 style="margin-top: 10%;margin-left: 25%;">Admin login</h3>
+      <input type="text" class="form-control" placeholder="Enter emailID" formControlName="uname" required>
+  
+      
+      <input type="password" class="form-control" placeholder="Enter Password" formControlName="pass" required>
+          
+      <button class="btn btn-success" type="submit">Login</button>
+      
+      
+    </div>
+  
+  </form>
+
+  
