@@ -22,7 +22,7 @@ export class UserloginComponent implements OnInit {
     {
       
        alert("You are sucessfully logged in")
-        this.router.navigateByUrl("");
+        this.router.navigateByUrl("checkout");
         
     }
     else{

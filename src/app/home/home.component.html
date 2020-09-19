@@ -1,45 +1,86 @@
 
+<br>
+<h1 align="center" ><span style="color :fuchsia;">Welcome to hotearphones.com</span></h1>
 
-    <table align="center" class="table table-bordered table-striped table-hover">
-        <thead>
-            <tr>
-                <th style="text-align: center; background-color:darkblue; color:white" colspan="13">Product Details</th>
-            </tr>
-            <tr style="background-color:lightgreen">
-                <th>Model Name</th>
-                <th>Microphone Availability</th>
-                <th>Frequency Range</th>
-                <th>Driver Unit Size</th>
-                <th>Impedance Rating</th>
-                <th>Price</th>
-                <th>Warranty Period</th>
-                <th>Noice Cancelation</th>
-                <th>Volume Control</th>
-                <th>Color Availability</th>
-                <th>Image</th>
-                <!--<th>Product Description</th>-->
-                
-                </tr>
-        </thead>
-        <tbody class="text-black" >
-            <tr  *ngFor = "let m of model">
-                <td>{{m.model_name}}</td>
-                <td><input type="checkbox"  [checked]="m.model_micavailability" disabled /></td>
-                <td>{{m.model_freqrange}}Hz</td>
-                <td>{{m.model_dusize}}mm</td>
-                <td>{{m.model_imprating}} ohms</td>
-                <td>{{m.model_price|currency:'INR'}}</td>
-                <td>{{m.model_warranty}} year</td>
-                <td><input type="checkbox"  [checked]="m.model_noicecancel" disabled /></td>
-                <td><input type="checkbox"  [checked]="m.model_volcontrol" disabled /></td>
-                <td>{{m.model_color}}</td>
-                <td><img [src]="m.model_image"></td>
-              <!-- <td >{{m.model_description}}</td>-->
-                
-                 </tr>
-        </tbody>
+<br>
+<div>
+    <ul style="list-style: circle;">
+    <li style="float: left;">
+    <a class="btn btn-primary" href=""></a>
+    <a class="btn btn-info" href="/userlogin">User Login</a>
+    <a class="btn btn-info" href="/signup">Signup (for new user)</a>
+    </li>
+    <li style="float: right;">
+    <a class="btn btn-info" href="/adminlogin">Admin Login</a>
+
+    </li>
+    </ul>
+</div>
+   <br>
+   <br>
+   <br>
+<div class="container mt-20" >
+    <div class="row">
+        <div class="card col-10 m-5" *ngFor="let m of model" >
+            <div class="card-header" ><span style="color: #15b562;"><h3>{{m.model_name}}</h3></span></div>
+            <div class="card-body">
+                <img src="{{m.model_image}}" style="height:150px;width:150px" />
+                <br><br>
+                <div > <b>Price :</b> {{m.model_price|currency:'INR'}} || <b>Driver Unit Size :</b>{{m.model_dusize}}mm ||<b>Impedance rating :</b>{{m.model_imprating}} ohms||<b>Available Color :</b>{{m.model_color}} </div>
+                <div class="card-footer">{{m.model_description}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div  class="card" style="width: 18rem;" *ngFor = "let m of model">
+   <div> {{m.model_name}}</div>
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>-->
+  <!--<tr>
+    <th colspan="3" bgcolor="yellow"> Marksheet </th>
+    <th> Final Grade </th>
+    </tr>
+        <tr bgcolor="gray">
+            <td align="center"><b>Subjects</b></td>
+            <th>Marks</th>
+            <th>Result</th>
+            <td bgcolor="tomato" align="center" valign="middle" rowspan="5"> A </td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>45</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>35</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td>20</td>
+            <td>Fail</td>
+        </tr>-->
+          <!--<tr style="height: 24px;">
+            <td style="width: 189px; height: 24px;">
+                <a href="#mi-dual-drive-earphone">
+                    <span style="color: #15b562;">3. Mi Dual Driver Earphone</span>
+                </a>
+            </td>
+            <td style="width: 189px; height: 24px;">
+                    <span style="color: #000000;">Earphone with Best Stage Separation</span>
+            </td>
+        </tr> -->
+      <!--  <div class="container">
+        <table>
+        <tr>
+            <th colspan="2">model name</th>
+        </tr>
+        <tr>
+            <td rowspan="4">image</td>
+        </tr>
     </table>
-    
-    
-    
-
+</div>-->
+            

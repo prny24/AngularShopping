@@ -1,0 +1,28 @@
+<br>
+<h1 align="center" ><span style="color :fuchsia;">Welcome to hotearphones.com</span></h1>
+
+<br>
+
+<br>
+<h1 align="center" ><span style="color :fuchsia;">Welcome to hotearphones.com</span></h1>
+
+<br>
+
+   <br>
+   <br>
+   <br>
+<div class="container mt-20" >
+    <div class="row">
+        <div class="card col-10 m-5" *ngFor="let m of model" >
+            <div class="card-header" ><span style="color: #15b562;"><h3>{{m.model_name}}</h3></span></div>
+            <div class="card-body">
+                <img src="{{m.model_image}}" style="height:150px;width:150px" />
+                <br><br>
+                <div > <b>Price :</b> {{m.model_price|currency:'INR'}}</div>
+                <div class="card-footer">{{m.model_description}}</div>
+                <div><input type="checkbox" /></div>
+                <div >Qty: <input type="number"/></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -15,7 +15,10 @@ import { HomeComponent } from './home/home.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component'
 import { UserdataService } from './userdata.service';
 import { SaveuserdataComponent } from './saveuserdata/saveuserdata.component';
-import { UserloginComponent } from './userlogin/userlogin.component'
+import { UserloginComponent } from './userlogin/userlogin.component';
+import { UpdateuserComponent } from './updateuser/updateuser.component';
+import { GetuserComponent } from './getuser/getuser.component';
+import { CheckoutComponent } from './checkout/checkout.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { UserloginComponent } from './userlogin/userlogin.component'
     HomeComponent,
     AdminloginComponent,
     SaveuserdataComponent,
-    UserloginComponent
+    UserloginComponent,
+    UpdateuserComponent,
+    GetuserComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

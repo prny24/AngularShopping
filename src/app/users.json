@@ -3,15 +3,15 @@
     {
       "user_name": "Akshay Chauhan",
       "user_email": "akshay123@gmail.com",
-      "user_age": 24,
-      "user_password": "258456",
+      "user_age": 27,
+      "user_password": "akshay123",
       "id": 1
     },
     {
-      "user_name": "Vikrant Aglawe",
-      "user_email": "vikrant234@gmail.com",
+      "user_name": "Rahul",
+      "user_email": "rahul",
       "user_age": 25,
-      "user_password": "456159",
+      "user_password": "rahul123",
       "id": 2
     }
   ]

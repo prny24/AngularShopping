@@ -18,7 +18,7 @@ export class SaveuserdataComponent implements OnInit {
     register(){
      
       this.userdataservice.saveData(this.form.value).subscribe((res)=>{
-        alert("Data saved sucessfully")
+        alert("Data saved sucessfully. now go and login")
       })
     }
 

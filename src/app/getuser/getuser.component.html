@@ -1,0 +1,39 @@
+<br>
+<h1 align="center" ><span style="color :fuchsia;">Welcome to hotearphones.com</span></h1>
+
+<br>
+
+<button class="btn btn-danger" (click)="logout()">Logout</button>
+   
+<table align="center" class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th style="text-align: center; background-color:darkblue; color:white" colspan="6">Product Details</th>
+        </tr>
+        <tr style="background-color:lightgreen">
+            <th>User Name</th>
+            <th>User Email</th>
+            <th>User Age</th>
+            <th>User Password</th>
+           
+           
+            <th>Edit Product Data</th>
+            <th>Delete Product Data</th>
+            </tr>
+    </thead>
+    <tbody class="text-black" >
+        <tr  *ngFor = "let u of user">
+            <td>{{u.user_name}}</td>
+            <td><input type="checkbox"  [checked]="u.user_email" disabled /></td>
+            <td>{{u.user_age}}</td>
+            <td>{{u.user_password}}</td>
+            
+            <td>
+                <a class="btn btn-info" [routerLink]="['/updateuser',u.id]">Edit Data</a> 
+            </td> 
+            <td>
+                <a class="btn btn-danger" (click)="delete(u.id)">Delete Data</a>
+            </td>
+             </tr>
+    </tbody>
+</table>

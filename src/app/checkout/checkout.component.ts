@@ -3,11 +3,12 @@ import { FormGroup, FormControl} from '@angular/forms'
 import { ProductdataService } from '../productdata.service';
 import {Router} from '@angular/router';
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-checkout',
+  templateUrl: './checkout.component.html',
+  styleUrls: ['./checkout.component.css']
 })
-export class HomeComponent implements OnInit {
+export class CheckoutComponent implements OnInit {
+
   form : FormGroup
   model : any=[]
   color : String[]= ["Red","Green","Black","Blue"]

@@ -21,5 +21,13 @@ export class UserdataService {
     return this.httpclient.get(api)
   }
 
+  updateData(id,userdata)
+  {
+    return this.httpclient.put(api+id,userdata)
+  }
+  deleteData(id)
+  {
+    return this.httpclient.delete(api+id)
+  }
   constructor(private httpclient: HttpClient) { }
 }

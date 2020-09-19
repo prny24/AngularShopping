@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl} from '@angular/forms'
 import { ProductdataService } from '../productdata.service';
 import {Router} from '@angular/router';
+import { UserdataService } from '../userdata.service';
+
 
 @Component({
   selector: 'app-getproductdata',
@@ -33,7 +35,7 @@ export class GetproductdataComponent implements OnInit {
     })
   }
 
-  constructor(private productdataservice:ProductdataService,private router:Router) { }
+  constructor(private productdataservice:ProductdataService,private router:Router,private userdataservice:UserdataService) { }
 
   ngOnInit(): void {
 

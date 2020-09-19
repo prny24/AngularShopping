@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl} from '@angular/forms'
 import { ProductdataService } from '../productdata.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-saveproductdata',
@@ -19,9 +20,10 @@ export class SaveproductdataComponent implements OnInit {
     //this.student.push(this.form.value)
     this.productdataservice.saveData(this.form.value).subscribe((res)=>{
       alert("Data saved sucessfully")
+      this.router.navigateByUrl("");
     })
   }
-  constructor(private productdataservice:ProductdataService) { }
+  constructor(private productdataservice:ProductdataService,private router:Router) { }
   ngOnInit(): void {
 
     

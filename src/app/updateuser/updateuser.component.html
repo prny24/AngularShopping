@@ -1,12 +1,12 @@
+
 <br>
 <h1 align="center" ><span style="color :fuchsia;">Welcome to hotearphones.com</span></h1>
 
 <br>
-
 <div class="container jumbotron">
-    <h1 style="text-align: center;" class="alert alert-success"> New User Register here </h1>
+    <h1 style="text-align: center;" class="alert alert-success"> Save Product Data</h1>
     <div class="table table-border alert alert-warning text-black">
-    <form [formGroup]="form" (ngSubmit)="register()">
+    <form [formGroup]="form" (ngSubmit)="updateuser()">
         <div>
             <label>&nbsp;&nbsp;Full Name :&nbsp;&nbsp;</label>
             <input type="text" placeholder="Enter your name" formControlName= "user_name" />
@@ -25,10 +25,11 @@
         </div>
         <div>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="submit" class="btn btn-primary" > Register</button>
+            <button type="submit" class="btn btn-primary" >Save</button>
             <button type="reset" class="btn btn-danger"> Clear</button>
         </div>
     </form>
 </div>
 </div>
+
 

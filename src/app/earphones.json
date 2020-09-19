@@ -22,10 +22,10 @@
       "model_dusize": 9,
       "model_imprating": 16,
       "model_price": 899,
-      "model_warranty": 1,
+      "model_warranty": 2,
       "model_noicecancel": true,
       "model_volcontrol": true,
-      "model_color": "Blue",
+      "model_color": "Black",
       "model_image": "assets/Sony-MDR-EX150AP-.jpg.webp",
       "model_description": "With a frequency response covering over a range from 5Hz to a maximum of 24000 Hz, this earphone does not misses out even the minute notes.  The bass quality is balanced and doesn’t feel artificial.  The highs tend to peak during the listening, but with the vocals being so crisp and clear, it’s almost indistinguishable for our ears.",
       "id": 2
@@ -50,7 +50,7 @@
       "model_micavailability": true,
       "model_freqrange": "20-20000",
       "model_dusize": 10,
-      "model_imprating": 20,
+      "model_imprating": 30,
       "model_price": 699,
       "model_warranty": 1,
       "model_noicecancel": true,
@@ -104,21 +104,6 @@
       "model_image": "assets/Sennheiser-CX-180-.jpg.webp",
       "model_description": "When it comes to the sound quality of these budget earphones, the Sennheiser CX 180 performs really well for the price.  It is best suited for those who listen to a lot of EDM tracks and bass-heavy songs.  It produces good highs and lows, the bass is really great and the vocals are clear and crispy.",
       "id": 7
-    },
-    {
-      "model_name": "AMX One X",
-      "model_micavailability": true,
-      "model_freqrange": "20-40000",
-      "model_dusize": 10,
-      "model_imprating": 32,
-      "model_price": 999,
-      "model_warranty": 1,
-      "model_noicecancel": true,
-      "model_volcontrol": true,
-      "model_color": "Green",
-      "model_image": "assets/AMX-One-X.jpg.webp",
-      "model_description": "The AMX One X features a 10mm speaker driver inside, which surprisingly sounded well.  The balance between the bass notes and the vocals along with tingling highs is profound.  Even though the bass is not too much, you will get to feel the correct amount of punchiness in your music without fail.  This earphone can be used to listen to any sort of music, bet it EDMs, vocals or pop.",
-      "id": 8
     },
     {
       "model_name": "pTron Boom 3",
